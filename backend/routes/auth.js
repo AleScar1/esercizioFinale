@@ -75,6 +75,10 @@ router.get('/callback', passport.authenticate("google", {session: false, failure
     }
 })
 
+//Google Auth Route  ok connessione 
+router.get("/", (req, res) => {
+  res.send("Login con Google ok");
+});
 
 // Funzione per creare il token JWT
 const generateToken = (payload) => {

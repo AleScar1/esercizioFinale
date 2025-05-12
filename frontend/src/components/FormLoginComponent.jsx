@@ -23,8 +23,6 @@ export default function FormLoginComponent() {
 
       if (response.ok) {
         alert('Login avvenuto con successo!');
-        // Esempio: salva token
-        // localStorage.setItem('token', data.token);
       } else {
         alert('Errore: ' + data.message);
       }
